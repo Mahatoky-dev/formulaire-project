@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HtmlSelect extends HtmlComponent {
+
     private HashMap<String,String> option;
 
     public void addOption(String key,String value) {
@@ -15,7 +16,7 @@ public class HtmlSelect extends HtmlComponent {
     }
     @Override
     public String buildHtmlInsert() {
-        String html = "<select name="+ this.getClass().getName() + " >";
+        String html = "<select name="+ this.getClass().getName() + "::" + this.getClass().getDeclaredFields()[0].getName() + " >";
         for(Map.Entry<String , String> entry : this.option.entrySet()) {
             html += "<option value=" + entry.getKey() + ">";
             html += entry.getValue();
