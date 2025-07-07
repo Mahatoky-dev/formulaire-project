@@ -29,10 +29,9 @@ public class Test {
         fow.initObjectInFile(new User().getClass());
         fow.writetRow("my row ---------");
 
-        FileObjectReader fileReader = new FileObjectReader("myFile");
-        String row = "vue.User::name->Mahatoky;;vue.User::age->10;;vue.Region::nom->Antananrivo;;class->vue.User;;vue.Maison::adresse->2c pres 5 c manajakaray;;";
+        FileObjectReader fileReader = new FileObjectReader("listeObject");
+        List list = new List(fileReader.getAllObjectFormFile());
 
-        System.out.println(fileReader.initAllObjectUtileFromRow(row.split(";;"), "::"));
-        
+        System.out.println(fileReader.getAllObjectFormFile());
     }
 }

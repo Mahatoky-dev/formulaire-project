@@ -27,6 +27,6 @@ public class Maison extends HtmlComponent {
 
     @Override
     public String toString() {
-        return "maisson a : " + adresse ;
+        return "maisson a : " + adresse + " region d' " + region;
     }
 }

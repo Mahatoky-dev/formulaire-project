@@ -16,4 +16,9 @@ public class Region extends HtmlComponent{
     public Region() {
         
     }
+
+    @Override
+    public String toString() {
+        return nom;
+    }
 }

@@ -4,6 +4,7 @@ public class User extends HtmlComponent {
     private String name;
     private int age;
     private Maison maison;
+    private Sexe sexe;
 
     public User() {
     }
@@ -23,6 +24,14 @@ public class User extends HtmlComponent {
 
     public Maison getMaison() {
         return maison;
+    }
+
+    public Sexe getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(Sexe sexe) {
+        this.sexe = sexe;
     }
 
     public void setMaison(Maison maison) {
