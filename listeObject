@@ -1,5 +1,3 @@
-vue.User::age->19;;vue.Region::nom->Analamanga;;vue.User::name->Mahatoky;;vue.Sexe::valeur->1;;class->vue.User;;vue.Maison::adresse->2c pres 5c Manjakaray;;
-vue.User::age->19;;vue.Region::nom->Analamanga;;vue.User::name->Mahatoky;;vue.Sexe::valeur->1;;class->vue.User;;vue.Maison::adresse->2c pres 5c Manjakaray;;
-vue.User::age->19;;vue.Region::nom->Analamanga;;vue.User::name->Mahatoky;;vue.Sexe::valeur->1;;class->vue.User;;vue.Maison::adresse->2c pres 5c Manjakaray;;
-vue.User::age->19;;vue.Region::nom->Analamanga;;vue.User::name->Mahatoky;;vue.Sexe::valeur->1;;class->vue.User;;vue.Maison::adresse->2c pres 5c Manjakaray;;
-vue.User::age->19;;vue.Region::nom->Analamanga;;vue.User::name->Valisoa;;vue.Sexe::valeur->0;;class->vue.User;;vue.Maison::adresse->2c pres 5 c manajakaray;;
+vue.test.Personne::prenom->sdfqsdf;;vue.test.Personne::age->12;;vue.test.Personne::nom->Maha;;vue.test.Localite::region->tana;;class->vue.test.PersonneLocalise;;vue.test.Localite::adresse->2c;;vue.test.Sexe::valeur->1;;
+vue.test.Personne::prenom->sdfqsdf;;vue.test.Personne::age->12;;vue.test.Personne::nom->Maha;;vue.test.Localite::region->tana;;class->vue.test.PersonneLocalise;;vue.test.Localite::adresse->2c;;vue.test.Sexe::valeur->1;;
+vue.test.Personne::prenom->Mahatoky;;vue.test.Personne::age->19;;vue.test.Personne::nom->Rakotondrafara;;vue.test.Localite::region->Analamanga;;class->vue.test.PersonneLocalise;;vue.test.Localite::adresse->2c Pres 5c Manjakaray;;vue.test.Sexe::valeur->1;;

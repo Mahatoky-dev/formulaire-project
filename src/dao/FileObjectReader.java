@@ -98,6 +98,10 @@ public class FileObjectReader extends FileObject {
                 String nameClass = sousTab[0];
                 distinctStringClass.add(nameClass);
             }
+            if(string.contains("class")) {
+                String classeMere =  string.split("->")[1];
+                distinctStringClass.add(classeMere);
+            }
         }
         return distinctStringClass;
     }

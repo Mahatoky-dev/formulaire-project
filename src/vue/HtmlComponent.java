@@ -13,6 +13,8 @@ public class HtmlComponent {
     public String buildHtmlInsert() throws Exception {
         String html = "";
         Field[] fields = this.getClass().getDeclaredFields();
+        // envoyer le nom de la classe
+        html += "<input type=" + "hidden" + " name=" + "'class'" + " value='" + this.getClass().getName() + "'>";
 
         // ecrire le nom du champs a remplire
         for (Field field : fields) {
@@ -34,10 +36,8 @@ public class HtmlComponent {
                 } else if (fieldClass.equals(LocalDate.class)) {
                     type = "date";
                 }
-                html += "<input type=" + type +  " name='" + this.getClass().getName() + "::" + field.getName() + "'> <br>";
-
-                //envoyer le nom de la classe
-                html += "<input type=" + "hidden" + " name=" + "'class'" + " value='" + this.getClass().getName() + "'>";
+                html += "<input type=" + type + " name='" + this.getClass().getName() + "::" + field.getName()
+                        + "'> <br>";
             }
         }
         html += "<br>";

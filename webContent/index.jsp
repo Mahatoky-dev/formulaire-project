@@ -1,4 +1,6 @@
-<%@ page import="vue.*" %> <%@ page import="java.util.ArrayList" %>
+<%@ page import="vue.*" %>
+<%@ page import="vue.test.*" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +10,10 @@
   </head>
   <body>
     <form action="FormServlet" method="get">
-      <% out.println(new User().buildHtmlInsert()); %>
-      <input type="submit" value="Insert" />
+      <%
+        out.println(new PersonneLocalise().buildHtmlInsert());
+      %>
+      <input type="submit" value="Insert">
     </form>
     <a href="jsp/liste.jsp">Voir la liste</a>
   </body>
