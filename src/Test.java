@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 import dao.*;
 import vue.*;
 public class Test {
@@ -20,7 +18,6 @@ public class Test {
         // try {
         //     System.out.println(user1.buildHtmlInsert());
         // } catch (Exception e) {
-        //     // TODO Auto-generated catch block
         //     e.printStackTrace();
         // }
 
@@ -30,7 +27,6 @@ public class Test {
         fow.writetRow("my row ---------");
 
         FileObjectReader fileReader = new FileObjectReader("listeObject");
-        List list = new List(fileReader.getAllObjectFormFile());
 
         System.out.println(fileReader.getAllObjectFormFile());
     }

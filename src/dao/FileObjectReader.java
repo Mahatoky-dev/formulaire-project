@@ -1,7 +1,6 @@
 package dao;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -23,6 +22,7 @@ public class FileObjectReader extends FileObject {
                     Object object = getObjectFromRow(line);
                     listeObjects.add(object);
                 }
+                br.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

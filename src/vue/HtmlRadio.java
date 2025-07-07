@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HtmlRadio extends HtmlComponent {
-    private String selectedItems = "none";
     private HashMap<String, String> radios = new HashMap<>();
 
     @Override

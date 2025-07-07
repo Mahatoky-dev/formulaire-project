@@ -1,18 +1,15 @@
 package controleur;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import dao.FileObjectReader;
 import dao.FileObjectWriter;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import vue.List;
 
 public class FormServlet extends HttpServlet {
 
@@ -31,14 +28,14 @@ public class FormServlet extends HttpServlet {
         rd.forward(request, response);
     }
 
-    private void initObjectInFile(HttpServletRequest request) {
-        try {
-            fow.initObjectInFile(Class.forName(request.getParameter("class")));
-            request.setAttribute("class", Class.forName(request.getParameter("class")));
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+    // private void initObjectInFile(HttpServletRequest request) {
+    //     try {
+    //         fow.initObjectInFile(Class.forName(request.getParameter("class")));
+    //         request.setAttribute("class", Class.forName(request.getParameter("class")));
+    //     } catch (ClassNotFoundException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
     private void writetRowOfRequest(HttpServletRequest request) {
         String row = "";
