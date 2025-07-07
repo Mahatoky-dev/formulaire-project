@@ -1,0 +1,42 @@
+objectif du projet :
+    - creaiton de formualire pour n'importe quelle type d'objet en java
+    - creation de tableau pour lister les objet java
+
+contrainte :
+    - generalisation du forme 
+    - generalst du tableau
+
+etape importante :
+    - insertion des donnes (interface utilisateeur)
+    - ecriture dans la base
+    - affichage de toute les donnes dans la base
+
+liste des classe a cree :
+    - classe a afficher
+    - classe qui gere l'isertion des donnes dans a base
+    - classe qui gerre l'affichage :
+        - affichage des composant du formulaire
+        - affichage tableau
+
+ETAPE DE DINAMISATION DU FORMULAIRE :
+    - MODIFICATION :
+        - [ok] build html insert  , condition if else -> swhich case
+            - [ok] switch ne peut pas etre utiliser pour les calsse  
+        - [ok] methode d'envoye des donnes
+            - [ok] envoye du nom de la classe et de l'atrubut
+                - [ok] ex :  "classe::atribut"
+    - CREATION :
+        - [ok] servlet reception data 
+            - [ok] ecriture dans la base
+            - redireciton vers affichage
+        - affichage des donnes saisi
+            - recuperation des donnes dans la base 
+            - creation de la liste des donnes
+
+    - CLASSE UTIL : 
+        - FileObjectWriter
+            - ecriture d'object dans une fichier
+                - fonc init les valuer du champs dans l'entete
+                - fonc add valeur
+        - FileObjectReader
+            - lecture  ,, recuperatio des object dans le fichier
